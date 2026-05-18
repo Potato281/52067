@@ -1,0 +1,3 @@
+char saludar(char letra) {
+    return letra;
+}

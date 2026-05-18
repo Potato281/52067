@@ -1,0 +1,3 @@
+int vacio() {
+    return 0;
+}
