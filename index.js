@@ -25,7 +25,6 @@ tokenStream.fill();
     
     for (let token of tokenStream.tokens) {
         if (token.type !== antlr4.Token.EOF) {
-            // Buscamos el nombre usando la clase estática AnalizadorCLexer
             let tokenName = AnalizadorCLexer.symbolicNames[token.type] || AnalizadorCLexer.literalNames[token.type] || `TOKEN_${token.type}`;
             let lexeme = token.text;
             console.log(`${lexeme}\t\t|\t${tokenName}`);
